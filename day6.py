@@ -11,7 +11,7 @@ max_ = a[-1]
 for i in range(n-1, -1, -1):
 	if max_ < a[i-1]:
 		b +=1
-		
+		max_ = max(a[i-1], a[i])
 print(b)
 
 #의좋은 형제
